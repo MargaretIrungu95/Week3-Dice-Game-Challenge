@@ -18,7 +18,7 @@ roll.addEventListener('click', () => {
             // For lose;
             totalScore.innerHTML = 'Game Over! YOU LOSE!:(';
             gameOver = true;
-            // roll.disabled = true;
+            welcomeDiceMsg.src = './images/lose.gif';
         } else{
             roundScore += dice1;
             totalScore.innerHTML = 'Total Score : ' + roundScore;
@@ -26,17 +26,18 @@ roll.addEventListener('click', () => {
                 // For win;
                 totalScore.innerHTML = 'YOU WIN!!';
                 gameOver = true;
-                // roll.disabled = true;
+                roundScore = 0;
+                welcomeDiceMsg.src = './images/win.gif';
             }
         }
     }
 });
-
 // Reset Button
 resetBtn.addEventListener('click', () => {
     roundScore = 0;
+    gameOver = false;
     totalScore.innerHTML = 'Total Score : ';
-    welcomeDiceMsg.src = 'rollthedice.gif';
-    // roll.disabled = false;
-    roll.restart();
+    welcomeDiceMsg.src = './images/rollthedice.gif';  
 })
+
+
