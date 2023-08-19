@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Edu+SA+Beginner:wght@600&family=Permanent+Marker&display=swap');
+
+
 body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
@@ -6,23 +10,50 @@ body {
 
 .header{
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'Niconne', cursive;
+    color: #e0d6e9;
+    text-shadow: 2px 2px 0px  #957dad,
+               4px 4px 0px #ee4b2b,
+               6px 6px 0px #00c2cb,
+               8px 8px 0px #ff7f50,
+               10px 10px 0px #553c9a;
 }
 
 .subheader{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
 
 .mainContainer{
     display: flex;
     justify-content: center;
+    
 }
 
+#welcomeDiceMsg{
+    background-color: transparent;
+    width: 450px;
+}
 #roll{
     max-width: 500px;
     max-height: 550px;
@@ -30,5 +61,45 @@ body {
 }
 #resetBtn{
     border: none;
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
+    border-radius: 15px;
+    background-color: rgba(126, 4, 240, 0.39);
+    box-shadow: 0 8px 8px -4px rgb(0, 43, 39);
+    cursor: pointer;
+    
 }
 
+#resetBtn:hover{
+    background-color: rgb(42, 43, 40) ;
+    color: #15008d;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+      
+
+}
+#totalScore{
+    font-family: 'Caveat', cursive;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    color: #fc4902;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
